@@ -37,7 +37,9 @@ async def change_model(msg: types.Message):
 @dp.message()
 async def any_msg(msg: types.Message):
     answer = orch.handle(msg.text)
-    await msg.answer(answer)
+    MAX_LEN = 4096  # Telegram message character limit
+    for i in range(0, len(answer), MAX_LEN):
+        await msg.answer(answer[i:i + MAX_LEN])
 
 if __name__ == '__main__':
     import asyncio

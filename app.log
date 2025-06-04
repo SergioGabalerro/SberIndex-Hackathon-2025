@@ -24,3 +24,86 @@
 2025-06-04 23:11:43,843 | Classifier | INFO | intent: {'task': 'population', 'year': 2024, 'top_n': 2024, 'okved': None}
 2025-06-04 23:11:44,105 | Orchestrator | ERROR | 'municipality_name'
 2025-06-04 23:11:44,202 | aiogram.event | INFO | Update id=526914507 is handled. Duration 358 ms by bot id=7709142539
+2025-06-04 23:12:53,478 | aiogram.dispatcher | INFO | Polling stopped
+2025-06-04 23:12:53,736 | aiogram.dispatcher | INFO | Polling stopped for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:20:21,029 | aiogram.dispatcher | INFO | Start polling
+2025-06-04 23:20:21,269 | aiogram.dispatcher | INFO | Run polling for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:20:27,767 | aiogram.event | INFO | Update id=526914508 is handled. Duration 469 ms by bot id=7709142539
+2025-06-04 23:20:40,125 | Classifier | INFO | intent: {'task': 'population', 'year': 2024, 'top_n': 2024, 'okved': None}
+2025-06-04 23:20:40,337 | Orchestrator | ERROR | Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2025-06-04 23:20:40,410 | aiogram.event | INFO | Update id=526914509 is handled. Duration 296 ms by bot id=7709142539
+2025-06-04 23:20:51,801 | aiogram.dispatcher | INFO | Polling stopped
+2025-06-04 23:20:52,059 | aiogram.dispatcher | INFO | Polling stopped for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:30:32,280 | aiogram.dispatcher | INFO | Start polling
+2025-06-04 23:30:32,521 | aiogram.dispatcher | INFO | Run polling for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:30:44,593 | aiogram.event | INFO | Update id=526914510 is handled. Duration 469 ms by bot id=7709142539
+2025-06-04 23:30:53,288 | Classifier | INFO | intent: {'task': 'population', 'year': 2024, 'top_n': 2024, 'okved': None}
+2025-06-04 23:30:54,955 | aiogram.event | INFO | Update id=526914511 is not handled. Duration 1655 ms by bot id=7709142539
+2025-06-04 23:30:54,956 | aiogram.event | ERROR | Cause exception while process update id=526914511 by bot id=7709142539
+TelegramBadRequest: Telegram server says - Bad Request: text is too long
+Traceback (most recent call last):
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\app.py", line 40, in any_msg
+    await msg.answer(answer)
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Huawei\Downloads\municipal_agent\.venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: text is too long
+2025-06-04 23:32:20,418 | aiogram.dispatcher | INFO | Polling stopped
+2025-06-04 23:32:20,678 | aiogram.dispatcher | INFO | Polling stopped for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:35:22,586 | aiogram.dispatcher | INFO | Start polling
+2025-06-04 23:35:22,959 | aiogram.dispatcher | INFO | Run polling for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:35:25,811 | aiogram.event | INFO | Update id=526914512 is handled. Duration 436 ms by bot id=7709142539
+2025-06-04 23:35:32,928 | Classifier | INFO | intent: {'task': 'population', 'year': 2024, 'top_n': 2024, 'okved': None}
+2025-06-04 23:35:36,943 | aiogram.event | INFO | Update id=526914513 is handled. Duration 4015 ms by bot id=7709142539
+2025-06-04 23:36:26,581 | Orchestrator | ERROR | Не смог определить метрику в вопросе
+2025-06-04 23:36:26,651 | aiogram.event | INFO | Update id=526914514 is handled. Duration 61 ms by bot id=7709142539
