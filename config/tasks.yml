@@ -1,0 +1,18 @@
+population:
+  synonyms: ["население", "населённые", "жителей", "population"]
+  table: "2_bdmo_population.parquet"
+  column: "value"
+  agg: "sum"
+
+salary:
+  synonyms: ["зарплата", "зп", "оплата труда", "salary"]
+  table: "4_bdmo_salary.parquet"
+  column: "value"
+  okved_field: "okved_letter"
+  agg: "max"
+
+market_access:
+  synonyms: ["рыночной доступности", "market access", "доступные", "road", "индекс"]
+  table: "1_market_access.parquet"
+  column: "market_access"
+  agg: "min"

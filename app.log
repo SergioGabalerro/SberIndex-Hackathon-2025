@@ -1,0 +1,12 @@
+2025-06-04 22:37:47,088 | aiogram.dispatcher | INFO | Start polling
+2025-06-04 22:37:49,884 | aiogram.dispatcher | INFO | Run polling for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 22:38:00,942 | aiogram.event | INFO | Update id=526914502 is handled. Duration 436 ms by bot id=7709142539
+2025-06-04 22:38:10,470 | Classifier | INFO | intent: {'task': 'population', 'year': 2024, 'top_n': 2024, 'okved': None}
+2025-06-04 22:38:10,470 | Orchestrator | ERROR | C:\Users\Huawei\Downloads\data\2_bdmo_population.parquet
+2025-06-04 22:38:10,542 | aiogram.event | INFO | Update id=526914503 is handled. Duration 77 ms by bot id=7709142539
+2025-06-04 22:39:20,260 | aiogram.dispatcher | INFO | Polling stopped
+2025-06-04 22:39:20,521 | aiogram.dispatcher | INFO | Polling stopped for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 22:48:58,701 | aiogram.dispatcher | INFO | Start polling
+2025-06-04 22:48:58,919 | aiogram.dispatcher | INFO | Run polling for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 22:49:17,111 | aiogram.dispatcher | INFO | Polling stopped
+2025-06-04 22:49:17,368 | aiogram.dispatcher | INFO | Polling stopped for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
