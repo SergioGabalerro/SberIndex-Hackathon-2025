@@ -18,3 +18,9 @@
 2025-06-04 23:04:22,592 | aiogram.event | INFO | Update id=526914505 is handled. Duration 63 ms by bot id=7709142539
 2025-06-04 23:04:46,500 | aiogram.dispatcher | INFO | Polling stopped
 2025-06-04 23:04:46,754 | aiogram.dispatcher | INFO | Polling stopped for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:11:09,351 | aiogram.dispatcher | INFO | Start polling
+2025-06-04 23:11:09,609 | aiogram.dispatcher | INFO | Run polling for bot @ltbemt_bot id=7709142539 - 'ГородION - помощник по региональной аналитике.'
+2025-06-04 23:11:37,224 | aiogram.event | INFO | Update id=526914506 is handled. Duration 452 ms by bot id=7709142539
+2025-06-04 23:11:43,843 | Classifier | INFO | intent: {'task': 'population', 'year': 2024, 'top_n': 2024, 'okved': None}
+2025-06-04 23:11:44,105 | Orchestrator | ERROR | 'municipality_name'
+2025-06-04 23:11:44,202 | aiogram.event | INFO | Update id=526914507 is handled. Duration 358 ms by bot id=7709142539
